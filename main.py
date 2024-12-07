@@ -8,11 +8,11 @@ from src.pipeline import translation_pipeline
 
 #load data 
 
-dataset_path = '/Users/habdelwa/projects/ollama/dischargeme_mimic_iv.jsonl'
+dataset_path = ''
 dataset = load_dataset('json', data_files=dataset_path, split='train')
 print(dataset)
 
-discharge_instructions = dataset['discharge_instructions'][:1000]
+discharge_instructions = dataset['text']
 
 def main():
 
